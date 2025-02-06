@@ -46,11 +46,92 @@ nav ul li a {
     color: white;
     padding: 50px 20px;
     text-align: center;
+    position: relative;
 }
 
-.container-main h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+.box { 
+    position: absolute;
+    width: 60%;  
+    height: 60%; 
+    max-width: 550px;  
+    max-height: 400px; 
+    top: 50%;  
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+    padding: 60px; 
+    text-align: left;
+} 
+
+.box .h1 {
+    color: black;
+    font-size: 2rem; 
+    font-weight: 600; 
+    margin-bottom: 15px;
+} 
+
+.box p {
+    color: black;
+    line-height: 1.6;  
+    margin-bottom: 10px; 
+} 
+
+.box .button { 
+    display: inline-block; 
+    background: #0078d4; 
+    border: none; 
+    padding: 12px 20px; 
+    color: white; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    cursor: pointer; 
+    text-align: center;
+    transition: background 0.3s ease;
+} 
+ 
+.box .button:hover { 
+    background-color: blue; 
+} 
+ 
+.box2 { 
+    position: absolute;  
+    width: 60%;  
+    height: 60%; 
+    max-width: 550px;  
+    max-height: 400px; 
+    top: 50%;  
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+    padding: 60px; 
+    text-align: left; 
+     
+} 
+
+.box2 .h1 { 
+    font-size: 2rem; 
+    font-weight: 600; 
+    margin-bottom: 15px; 
+} 
+
+.box2 p { 
+    line-height: 1.6;  
+    margin-bottom: 10px; 
+} 
+
+.box2 .button { 
+    display: inline-block; 
+    background: #0078d4; 
+    border: none; 
+    padding: 12px 20px; 
+    color: white; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    cursor: pointer; 
+    text-align: center;  
+    transition: background 0.3s ease;
+} 
+
+.box2 .button:hover { 
+    background-color: blue; 
 }
 
 .cta-button {
@@ -60,19 +141,6 @@ nav ul li a {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-}
-
-.features {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.features h2 {
-    margin-bottom: 20px;
-}
-
-.feature {
-    margin: 20px 0;
 }
 
 .card {
