@@ -51,9 +51,14 @@ li {
     border-bottom: 1px solid #ccc;
 }
 
-li.completed {
+li.completed span{
     text-decoration: line-through;
     color: #888;
+}
+
+li.completed.delete-button {
+    text-decoration: none;
+    color: #dc3545;
 }
 
 .delete-button {

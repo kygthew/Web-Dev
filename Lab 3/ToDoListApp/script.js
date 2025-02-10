@@ -1,8 +1,12 @@
 document.getElementById('addTaskButton').addEventListener('click', addTask);
-document.getElementById('taskInput').addEventListener('keypress', function(event) {
+document.getElementById('taskInput').addEventListener('keypress' || 'click', function(event) {
     if (event.key === 'Enter') {
         addTask();
     }
+});
+document.getElementById('deleteAllButton').addEventListener('click', function() {
+    const taskList = document.getElementById('taskList');
+    taskList.innerHTML = '';
 });
 
 function addTask() {
