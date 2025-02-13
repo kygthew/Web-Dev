@@ -1,0 +1,63 @@
+.product-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: left;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  width: 250px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  background: #fff;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+h3 a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+h3 a:hover {
+  text-decoration: underline;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
+
+button:first-of-type {
+  background-color: #25D366; /* WhatsApp color */
+}
+
+button:last-of-type {
+  background-color: #0088cc; /* Telegram color */
+}
+
+button:hover {
+  opacity: 0.8;
+}
