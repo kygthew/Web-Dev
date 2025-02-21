@@ -1,0 +1,41 @@
+<!-- <div class="product-card" *ngIf="!product.deleted">
+  <img [src]="product.image" alt="{{ product.name }}">
+  <h3><a [href]="product.link" target="_blank">{{ product.name }}</a></h3>
+  <p>{{ product.description }}</p>
+  <p>⭐ {{ product.rating }}</p>
+  <p>❤️ Likes: {{ product.likes }}</p>
+
+  <button class="like-button" (click)="likeProduct()">Like</button>
+  <button class="delete-button" (click)="deleteProduct()">Delete</button>
+  <button class="share-button" (click)="shareOnWhatsApp(product)">WhatsApp</button>
+  <button class="share-button" (click)="shareOnTelegram(product)">Telegram</button>
+</div> -->
+
+
+<div class="product-item">
+    <img [src]="product.image" alt="{{ product.name }}">
+    <h3><a [href]="product.link" target="_blank">{{ product.name }}</a></h3>
+    <p>{{ product.description }}</p>
+    <p>⭐ {{ product.rating }}</p>
+    <p>❤️ Likes: {{ product.likes }}</p>
+    <button class="like-button" (click)="likeProduct()">Like</button>
+    <button class="delete-button" (click)="deleteProduct()">Delete</button>
+    <button class="share-button" (click)="shareOnWhatsApp(product)">Share On WhatsApp</button>
+    <button class="share-button" (click)="shareOnTelegram(product)">Share On Telegram</button>
+</div>
+
+<!-- <div class="product-container">
+    <div *ngFor="let category of categories">
+      <h2>{{ category.name }}</h2>
+      <div class="product-list">
+        <div class="product-card" *ngFor="let product of category.products">
+          <img [src]="product.image" alt="{{ product.name }}">
+          <h3><a [href]="product.link" target="_blank">{{ product.name }}</a></h3>
+          <p>{{ product.description }}</p>
+          <p>⭐ {{ product.rating }}</p>
+          <button (click)="shareOnWhatsApp(product)">Share on WhatsApp</button>
+          <button (click)="shareOnTelegram(product)">Share on Telegram</button>
+        </div>
+      </div>
+    </div>
+</div> -->
