@@ -1,0 +1,15 @@
+input[type="number"] {
+  padding: 8px;
+  width: 100px;
+  margin: 10px 5px;
+}
+
+ul li img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  text-align: center;
+  color: #555;
+}
