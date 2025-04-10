@@ -1,0 +1,11 @@
+<h2>Vacancies</h2>
+<ul *ngIf="vacancies.length > 0; else noVacancies">
+  <li *ngFor="let vacancy of vacancies">
+    <strong>{{ vacancy.name }}</strong>: {{ vacancy.salary }} $<br>
+    {{ vacancy.description }}
+  </li>
+</ul>
+
+<ng-template #noVacancies>
+  <p>No vacancies found for this company.</p>
+</ng-template>
